@@ -5,7 +5,7 @@
 ```
 
 ### `Answer`
-The effect using a compound expression as an operator allows us to concisely define the behaviour of a procedure based on certain conditions. In this case, the compound expression
+Using a compound expression as an operator allows us to concisely define the behaviour of a procedure based on certain conditions. In this case, the compound expression
 ```scheme
 (if (> b 0) + -)
 ```
