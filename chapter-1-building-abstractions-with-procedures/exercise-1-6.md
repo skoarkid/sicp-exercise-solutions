@@ -48,7 +48,7 @@ And so on till infinity...
 In other words, since we evaluate the recursive procedure call before we bother to check if the guess is good enough, we would never stop evaluating.
 The special form if is special because it bends the rules a bit...It still works via applicative order but it only evaluates the operands if it needs to. (i.e it evaluates the predicate first and only evaluates its corresponding expression depending on the truth value)
 
-However, I still don't get why we need the special form if per say. We could just use the cond clause in place of it.(without using it do create a user defined procedure)
+However, I still don't get why we need the special form if per say. We could just use the cond clause in place of it.(without using it to create a user defined procedure)
 The cond clause is also a special form that follows the same rules as if - evaluate the predicate first and only evaluate its corresponding expression. I've checked the following implementation and it works perfectly:
 ```scheme
 (define (sqrt-iter guess x)
