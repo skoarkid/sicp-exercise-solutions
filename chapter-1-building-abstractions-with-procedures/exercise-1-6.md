@@ -42,7 +42,7 @@ Next step:
 (new-if #f 1 (new-if (good-enough? 1.5 2)
             1.5
             (sqrt-iter (improve 1.5 2)
-                        2))))
+                        2)))
 ```
 And so on till infinity...
 In other words, since we evaluate the recursive procedure call before we bother to check if the guess is good enough, we would never stop evaluating.
